@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <title>ubergarm</title>
+  <link rel="shortcut icon" type="image/png" href="">
+  <link rel="stylesheet" href="https://unpkg.com/docute@3/dist/docute.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script src="https://unpkg.com/docute-iframe"></script>
+  <script src="https://unpkg.com/docute@3/dist/docute.js"></script>
+  <script src="https://unpkg.com/prismjs/components/prism-python.js"></script>
+  <script>
+    docute.init({
+     nav: [
+        {title: 'Home', path: '/'},
+        {title: 'Blog', path: '/blog/'},
+        {title: 'Snippets', path: '/snippets'},
+        {title: 'One-Liners', path: '/one-liners'},
+        {title: 'Todo', path: '/todo'},
+        {title: 'Contact', type: 'dropdown', items: [{
+            path: '/resume',
+            title: 'Resume',
+          },
+          {
+            path: '/about',
+            title: 'About',
+          }]
+        },
+
+      ],
+      icons: [{
+          icon: 'github',
+          label: 'Fork my stuff!',
+          link: 'https://github.com/ubergarm/',
+      }],
+      marked: {
+          smartypants: true
+      },
+      plugins: [
+          docuteIframe()
+      ],
+    });
+  </script>
+</body>
+</html>
