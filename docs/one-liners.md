@@ -31,3 +31,7 @@ Great for debugging REST APIs.
 ```bash
 apt-get install httpie
 ```
+
+```bash
+http --json "https://ubergarm.com/blog/archive/"
+```
